@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.second.SecondActivity">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/name"
+        app:layout_constraintBottom_toTopOf="@id/et_count"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,MissingPrefix,TextFields" />
+
+    <EditText
+        android:id="@+id/et_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/count"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@id/et_id"
+        app:layout_constraintTop_toBottomOf="@id/et_name"
+        tools:ignore="Autofill,MissingPrefix" />
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/id"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@id/btn_add"
+        app:layout_constraintTop_toBottomOf="@id/et_count"
+        tools:ignore="Autofill,MissingPrefix" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_id" />
+
+</LinearLayout>

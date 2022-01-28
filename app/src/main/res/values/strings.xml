@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TaskApp</string>
+    <string name="save">Start</string>
+    <string name="name">Name:</string>
+    <string name="count">Count:</string>
+    <string name="enabled">Enabled:</string>
+    <string name="get_item">GET item</string>
+    <string name="edit">EDIT</string>
+    <string name="delete">DELETE</string>
+    <string name="get">GET</string>
+    <string name="id">id</string>
+    <string name="add">add</string>
+</resources>
